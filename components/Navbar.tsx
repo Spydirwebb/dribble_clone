@@ -20,8 +20,8 @@ const Navbar = () => {
                 {NavLinks.map((link) => (
                     <Link key={link.key} href={link.href}>{link.text}</Link>
                 ))}
-
             </ul>
+            </div>
             <div className='flexCenter gap-4'>
                 {session ? (
                     <>
@@ -34,7 +34,6 @@ const Navbar = () => {
                     <AuthProviders />
                 )}
             </div>
-        </div>
     </nav>
   )
 }
